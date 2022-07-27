@@ -1,4 +1,4 @@
-db.produtos.updateMany({}, {
+db.produtos.updateOne({}, {
   $pull: {
     ingredientes: { $eq: "cebola" },
   },
